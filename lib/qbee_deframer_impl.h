@@ -38,6 +38,7 @@ namespace gr {
         unsigned char *d_pktbuf;
 	unsigned char *d_icdbuf;
 	unsigned char *d_rsbuf;
+	unsigned char *d_ax25headerbuf;
 
      public:
       qbee_deframer_impl(int length_min,int length_max);

@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Mode 6 Debug
-# Generated: Mon Jan  8 17:03:56 2018
+# Generated: Thu Feb  1 15:03:57 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -230,7 +230,6 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         self.Add(_squelch_sizer)
         self.qbee_qbee_nrzi_decoder_0 = qbee.qbee_nrzi_decoder()
         self.qbee_qbee_demodulator_fsk_0 = qbee.qbee_demodulator_fsk(sps, mod_index)
-        self.qbee_qbee_deframer_0 = qbee.qbee_deframer(32, 500)
         self.nwr_symbol_sync_xx_0 = nwr.symbol_sync_ff(nwr.timing_error_detector.TED_MENGALI_AND_DANDREA_GMSK, sps, 0.02, 1.0, 1.5, 1, digital.constellation_bpsk().base(), nwr.interpolating_resampler.IR_MMSE_8TAP, 128, ([]))
         self.low_pass_filter_0 = filter.fir_filter_ccf(dec, firdes.low_pass(
         	1, samp_rate, cut_off, xlating_bw, firdes.WIN_HAMMING, 6.76))
@@ -259,6 +258,7 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         self.Add(_gain_sizer)
         self.fir_filter_xxx_0 = filter.fir_filter_ccc(12, (1, ))
         self.fir_filter_xxx_0.declare_sample_delay(0)
+        self.digital_hdlc_deframer_bp_0 = digital.hdlc_deframer_bp(32, 500)
         self.digital_fll_band_edge_cc_0 = digital.fll_band_edge_cc(sps, 0.9, 44, 0.0005)
         self.digital_descrambler_bb_0 = digital.descrambler_bb(0x21, 0x000000, 16)
         self.digital_binary_slicer_fb_0 = digital.binary_slicer_fb()
@@ -274,8 +274,7 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         ##################################################
         # Connections
         ##################################################
-        self.msg_connect((self.qbee_qbee_deframer_0, 'out'), (self.blocks_message_debug_0, 'print_pdu'))
-        self.msg_connect((self.qbee_qbee_deframer_0, 'out'), (self.blocks_socket_pdu_1, 'pdus'))
+        self.msg_connect((self.digital_hdlc_deframer_bp_0, 'out'), (self.blocks_message_debug_0, 'print_pdu'))
         self.connect((self.analog_agc2_xx_0, 0), (self.digital_fll_band_edge_cc_0, 0))
         self.connect((self.blocks_file_source_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_pack_k_bits_bb_0, 0), (self.blocks_udp_sink_1, 0))
@@ -291,7 +290,7 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         self.connect((self.nwr_symbol_sync_xx_0, 0), (self.wxgui_fftsink2_4, 0))
         self.connect((self.qbee_qbee_demodulator_fsk_0, 0), (self.nwr_symbol_sync_xx_0, 0))
         self.connect((self.qbee_qbee_nrzi_decoder_0, 0), (self.blocks_pack_k_bits_bb_0, 0))
-        self.connect((self.qbee_qbee_nrzi_decoder_0, 0), (self.qbee_qbee_deframer_0, 0))
+        self.connect((self.qbee_qbee_nrzi_decoder_0, 0), (self.digital_hdlc_deframer_bp_0, 0))
 
     def get_zeta(self):
         return self.zeta
