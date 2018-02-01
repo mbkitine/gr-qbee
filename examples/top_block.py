@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Reed-Solomon Testing
 # Author: Moses Browne Mwakyanjala
-# Generated: Thu Feb  1 15:07:00 2018
+# Generated: Thu Feb  1 15:45:44 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -70,7 +70,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_socket_pdu_0 = blocks.socket_pdu("TCP_SERVER", '', '5001', 10000, False)
         self.blocks_message_debug_0 = blocks.message_debug()
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/examples/qbee_packets/qbee3.bin', True)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/examples/qbee_packets/qbee.bin', True)
 
         ##################################################
         # Connections
