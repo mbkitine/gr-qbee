@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5b92a05744f89fb79832c3bccb282714" kind="dir">
+    <compoundname>qbee</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="qbee__demodulator__fsk_8h">qbee_demodulator_fsk.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/include/qbee/"/>
+  </compounddef>
+</doxygen>

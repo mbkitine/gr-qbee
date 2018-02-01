@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<block>
+  <name>qbee_deframer</name>
+  <key>qbee_qbee_deframer</key>
+  <category>[qbee]</category>
+  <import>import qbee</import>
+  <make>qbee.qbee_deframer($length_min, $length_max)</make>
+<param>
+    <name>Min length</name>
+    <key>length_min</key>
+    <value>32</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Max length</name>
+    <key>length_max</key>
+    <value>500</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

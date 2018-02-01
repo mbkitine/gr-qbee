@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<block>
+  <name>qbee_demodulator_fsk</name>
+  <key>qbee_qbee_demodulator_fsk</key>
+  <category>[qbee]</category>
+  <import>import qbee</import>
+  <make>qbee.qbee_demodulator_fsk($sps, $modulation_index)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Samples Per Symbol</name>
+    <key>sps</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Modulation Index</name>
+    <key>modulation_index</key>
+    <type>float</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
