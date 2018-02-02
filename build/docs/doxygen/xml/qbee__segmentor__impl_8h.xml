@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="qbee__segmentor__impl_8h" kind="file" language="C++">
+    <compoundname>qbee_segmentor_impl.h</compoundname>
+    <includes refid="qbee__segmentor_8h" local="no">qbee/qbee_segmentor.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">algorithm</includes>
+    <incdepgraph>
+      <node id="72">
+        <label>qbee_segmentor_impl.h</label>
+        <link refid="qbee_segmentor_impl.h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>qbee/qbee_segmentor.h</label>
+        <link refid="qbee__segmentor_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="75">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="74">
+        <label>qbee/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>vector</label>
+      </node>
+      <node id="78">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__segmentor__impl" prot="public">gr::qbee::qbee_segmentor_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1qbee">gr::qbee</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="qbee__segmentor__impl_8h_1ad16d6719466bd11ec50478107d79d2b1" prot="public" static="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>typedef std::vector&lt;unsigned char&gt; byte</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_segmentor_impl.h" line="27" column="1" bodyfile="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_segmentor_impl.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_segmentor_impl.h"/>
+  </compounddef>
+</doxygen>
