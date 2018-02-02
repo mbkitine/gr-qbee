@@ -153,9 +153,33 @@ lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o.provides: lib/CMakeFiles/gnuradi
 lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o.provides.build: lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o
 
 
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o: lib/CMakeFiles/gnuradio-qbee.dir/flags.make
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o: ../lib/rs_encode.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o -c /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.cc
+
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.i"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.cc > CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.i
+
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.s"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.cc -o CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.s
+
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.requires
+
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.provides: lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.provides
+
+lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.provides.build: lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o
+
+
 lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o: lib/CMakeFiles/gnuradio-qbee.dir/flags.make
 lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o: ../lib/qbee_segmentor_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o"
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o -c /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_segmentor_impl.cc
 
 lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.i: cmake_force
@@ -177,13 +201,39 @@ lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o.provides: lib/CMakeFil
 lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o
 
 
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o: lib/CMakeFiles/gnuradio-qbee.dir/flags.make
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o: ../lib/qbee_framer_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o -c /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.cc
+
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.i"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.cc > CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.i
+
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.s"
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.cc -o CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.s
+
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.provides: lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o
+
+
 # Object files for target gnuradio-qbee
 gnuradio__qbee_OBJECTS = \
 "CMakeFiles/gnuradio-qbee.dir/qbee_demodulator_fsk_impl.cc.o" \
 "CMakeFiles/gnuradio-qbee.dir/qbee_nrzi_decoder_impl.cc.o" \
 "CMakeFiles/gnuradio-qbee.dir/qbee_deframer_impl.cc.o" \
 "CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o" \
-"CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o"
+"CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o" \
+"CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o" \
+"CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o"
 
 # External object files for target gnuradio-qbee
 gnuradio__qbee_EXTERNAL_OBJECTS =
@@ -192,7 +242,9 @@ lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/qbee_de
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/qbee_nrzi_decoder_impl.cc.o
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/qbee_deframer_impl.cc.o
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o
+lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o
+lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/build.make
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -205,7 +257,7 @@ lib/libgnuradio-qbee-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-digital.so
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-filter.so
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-fft.so
 lib/libgnuradio-qbee-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-qbee.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libgnuradio-qbee-1.0.0git.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libgnuradio-qbee-1.0.0git.so"
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-qbee.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-qbee-1.0.0git.so.0.0.0 libgnuradio-qbee-1.0.0git.so.0.0.0 libgnuradio-qbee-1.0.0git.so
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-qbee-1.0.0git.so.0.0.0 /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/lib/libgnuradio-qbee.so
@@ -224,7 +276,9 @@ lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/qbee
 lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/qbee_nrzi_decoder_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/qbee_deframer_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.o.requires
+lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o.requires
 lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/qbee_segmentor_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-qbee.dir/requires: lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-qbee.dir/requires
 

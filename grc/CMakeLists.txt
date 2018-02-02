@@ -16,10 +16,10 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     qbee_qbee_demodulator_fsk.xml
     qbee_qbee_nrzi_decoder.xml
     qbee_qbee_deframer.xml
-    qbee_qbee_segmentor.xml DESTINATION share/gnuradio/grc/blocks
+    qbee_qbee_segmentor.xml
+    qbee_qbee_framer.xml DESTINATION share/gnuradio/grc/blocks
 )

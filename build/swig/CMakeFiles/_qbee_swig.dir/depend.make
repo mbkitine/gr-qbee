@@ -4,6 +4,7 @@
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/api.h
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/qbee_deframer.h
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/qbee_demodulator_fsk.h
+swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/qbee_framer.h
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/qbee_nrzi_decoder.h
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: ../include/qbee/qbee_segmentor.h
 swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o: swig/qbee_swigPYTHON_wrap.cxx

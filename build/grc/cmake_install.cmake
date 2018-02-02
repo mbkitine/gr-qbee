@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/grc/qbee_qbee_nrzi_decoder.xml"
     "/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/grc/qbee_qbee_deframer.xml"
     "/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/grc/qbee_qbee_segmentor.xml"
+    "/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/grc/qbee_qbee_framer.xml"
     )
 endif()
 

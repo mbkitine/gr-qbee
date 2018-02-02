@@ -25,5 +25,6 @@ install(FILES
     qbee_demodulator_fsk.h
     qbee_nrzi_decoder.h
     qbee_deframer.h
-    qbee_segmentor.h DESTINATION include/qbee
+    qbee_segmentor.h
+    qbee_framer.h DESTINATION include/qbee
 )

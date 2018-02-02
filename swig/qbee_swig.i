@@ -12,6 +12,7 @@
 #include "qbee/qbee_nrzi_decoder.h"
 #include "qbee/qbee_deframer.h"
 #include "qbee/qbee_segmentor.h"
+#include "qbee/qbee_framer.h"
 %}
 
 
@@ -23,3 +24,5 @@ GR_SWIG_BLOCK_MAGIC2(qbee, qbee_nrzi_decoder);
 GR_SWIG_BLOCK_MAGIC2(qbee, qbee_deframer);
 %include "qbee/qbee_segmentor.h"
 GR_SWIG_BLOCK_MAGIC2(qbee, qbee_segmentor);
+%include "qbee/qbee_framer.h"
+GR_SWIG_BLOCK_MAGIC2(qbee, qbee_framer);

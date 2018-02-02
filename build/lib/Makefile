@@ -276,6 +276,33 @@ qbee_demodulator_fsk_impl.cc.s:
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/qbee_demodulator_fsk_impl.cc.s
 .PHONY : qbee_demodulator_fsk_impl.cc.s
 
+qbee_framer_impl.o: qbee_framer_impl.cc.o
+
+.PHONY : qbee_framer_impl.o
+
+# target to build an object file
+qbee_framer_impl.cc.o:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.o
+.PHONY : qbee_framer_impl.cc.o
+
+qbee_framer_impl.i: qbee_framer_impl.cc.i
+
+.PHONY : qbee_framer_impl.i
+
+# target to preprocess a source file
+qbee_framer_impl.cc.i:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.i
+.PHONY : qbee_framer_impl.cc.i
+
+qbee_framer_impl.s: qbee_framer_impl.cc.s
+
+.PHONY : qbee_framer_impl.s
+
+# target to generate assembly for a file
+qbee_framer_impl.cc.s:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/qbee_framer_impl.cc.s
+.PHONY : qbee_framer_impl.cc.s
+
 qbee_nrzi_decoder_impl.o: qbee_nrzi_decoder_impl.cc.o
 
 .PHONY : qbee_nrzi_decoder_impl.o
@@ -357,6 +384,33 @@ rs_decode.cc.s:
 	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/rs_decode.cc.s
 .PHONY : rs_decode.cc.s
 
+rs_encode.o: rs_encode.cc.o
+
+.PHONY : rs_encode.o
+
+# target to build an object file
+rs_encode.cc.o:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.o
+.PHONY : rs_encode.cc.o
+
+rs_encode.i: rs_encode.cc.i
+
+.PHONY : rs_encode.i
+
+# target to preprocess a source file
+rs_encode.cc.i:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.i
+.PHONY : rs_encode.cc.i
+
+rs_encode.s: rs_encode.cc.s
+
+.PHONY : rs_encode.s
+
+# target to generate assembly for a file
+rs_encode.cc.s:
+	cd /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build && $(MAKE) -f lib/CMakeFiles/gnuradio-qbee.dir/build.make lib/CMakeFiles/gnuradio-qbee.dir/rs_encode.cc.s
+.PHONY : rs_encode.cc.s
+
 test_qbee.o: test_qbee.cc.o
 
 .PHONY : test_qbee.o
@@ -408,6 +462,9 @@ help:
 	@echo "... qbee_demodulator_fsk_impl.o"
 	@echo "... qbee_demodulator_fsk_impl.i"
 	@echo "... qbee_demodulator_fsk_impl.s"
+	@echo "... qbee_framer_impl.o"
+	@echo "... qbee_framer_impl.i"
+	@echo "... qbee_framer_impl.s"
 	@echo "... qbee_nrzi_decoder_impl.o"
 	@echo "... qbee_nrzi_decoder_impl.i"
 	@echo "... qbee_nrzi_decoder_impl.s"
@@ -417,6 +474,9 @@ help:
 	@echo "... rs_decode.o"
 	@echo "... rs_decode.i"
 	@echo "... rs_decode.s"
+	@echo "... rs_encode.o"
+	@echo "... rs_encode.i"
+	@echo "... rs_encode.s"
 	@echo "... test_qbee.o"
 	@echo "... test_qbee.i"
 	@echo "... test_qbee.s"

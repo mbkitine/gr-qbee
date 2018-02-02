@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Mode 6 Debug
-# Generated: Thu Feb  1 15:03:57 2018
+# Generated: Thu Feb  1 17:12:59 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -256,18 +256,18 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         	proportion=1,
         )
         self.Add(_gain_sizer)
-        self.fir_filter_xxx_0 = filter.fir_filter_ccc(12, (1, ))
+        self.fir_filter_xxx_0 = filter.fir_filter_ccc(195312/48000, (1, ))
         self.fir_filter_xxx_0.declare_sample_delay(0)
         self.digital_hdlc_deframer_bp_0 = digital.hdlc_deframer_bp(32, 500)
-        self.digital_fll_band_edge_cc_0 = digital.fll_band_edge_cc(sps, 0.9, 44, 0.0005)
+        self.digital_fll_band_edge_cc_0 = digital.fll_band_edge_cc(sps, 0.9, 44, 0.02)
         self.digital_descrambler_bb_0 = digital.descrambler_bb(0x21, 0x000000, 16)
         self.digital_binary_slicer_fb_0 = digital.binary_slicer_fb()
         self.blocks_udp_sink_1 = blocks.udp_sink(gr.sizeof_char*1, '127.0.0.1', 5002, 1000, True)
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate*12,True)
+        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, 195312,True)
         self.blocks_socket_pdu_1 = blocks.socket_pdu("UDP_SERVER", '', '5001', 10000, False)
         self.blocks_pack_k_bits_bb_0 = blocks.pack_k_bits_bb(8)
         self.blocks_message_debug_0 = blocks.message_debug()
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/mbkitine/Desktop/Signals/mode6-576000.bin', False)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/mbkitine/Desktop/Signals/SE01/qbee50_20171227-071001_iq.raw', False)
         self.analog_agc2_xx_0 = analog.agc2_cc(1e-1, 1e-2, 1.0, 1.0)
         self.analog_agc2_xx_0.set_max_gain(65536)
 
@@ -448,7 +448,6 @@ class Mode_6_Debug(grc_wxgui.top_block_gui):
         self.wxgui_fftsink2_3.set_sample_rate(self.samp_rate/self.dec)
         self.wxgui_fftsink2_2.set_sample_rate(self.samp_rate)
         self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, self.cut_off, self.xlating_bw, firdes.WIN_HAMMING, 6.76))
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate*12)
 
     def get_rrc_taps(self):
         return self.rrc_taps

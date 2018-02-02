@@ -396,7 +396,15 @@ qbee_demodulator_fsk_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.n
 qbee_demodulator_fsk = qbee_demodulator_fsk.make;
 
 class qbee_nrzi_decoder(object):
-    """Proxy of C++ gr::qbee::qbee_nrzi_decoder class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_nrzi_decoder.
+
+    To avoid accidental use of raw pointers, qbee::qbee_nrzi_decoder's constructor is in a private implementation class. qbee::qbee_nrzi_decoder::make is the public interface for creating new instances.
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -405,7 +413,17 @@ class qbee_nrzi_decoder(object):
     __repr__ = _swig_repr
 
     def make():
-        """make() -> qbee_nrzi_decoder_sptr"""
+        """
+        make() -> qbee_nrzi_decoder_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_nrzi_decoder.
+
+        To avoid accidental use of raw pointers, qbee::qbee_nrzi_decoder's constructor is in a private implementation class. qbee::qbee_nrzi_decoder::make is the public interface for creating new instances.
+        """
         return _qbee_swig.qbee_nrzi_decoder_make()
 
     make = staticmethod(make)
@@ -415,7 +433,17 @@ qbee_nrzi_decoder_swigregister = _qbee_swig.qbee_nrzi_decoder_swigregister
 qbee_nrzi_decoder_swigregister(qbee_nrzi_decoder)
 
 def qbee_nrzi_decoder_make():
-    """qbee_nrzi_decoder_make() -> qbee_nrzi_decoder_sptr"""
+    """
+    qbee_nrzi_decoder_make() -> qbee_nrzi_decoder_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_nrzi_decoder.
+
+    To avoid accidental use of raw pointers, qbee::qbee_nrzi_decoder's constructor is in a private implementation class. qbee::qbee_nrzi_decoder::make is the public interface for creating new instances.
+    """
     return _qbee_swig.qbee_nrzi_decoder_make()
 
 class qbee_nrzi_decoder_sptr(object):
@@ -443,7 +471,17 @@ class qbee_nrzi_decoder_sptr(object):
     __del__ = lambda self: None
 
     def make(self):
-        """make(qbee_nrzi_decoder_sptr self) -> qbee_nrzi_decoder_sptr"""
+        """
+        make(qbee_nrzi_decoder_sptr self) -> qbee_nrzi_decoder_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_nrzi_decoder.
+
+        To avoid accidental use of raw pointers, qbee::qbee_nrzi_decoder's constructor is in a private implementation class. qbee::qbee_nrzi_decoder::make is the public interface for creating new instances.
+        """
         return _qbee_swig.qbee_nrzi_decoder_sptr_make(self)
 
 
@@ -622,7 +660,19 @@ qbee_nrzi_decoder_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name
 qbee_nrzi_decoder = qbee_nrzi_decoder.make;
 
 class qbee_deframer(object):
-    """Proxy of C++ gr::qbee::qbee_deframer class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_deframer.
+
+    To avoid accidental use of raw pointers, qbee::qbee_deframer's constructor is in a private implementation class. qbee::qbee_deframer::make is the public interface for creating new instances.
+
+    Args:
+        length_min : 
+        length_max : 
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -631,7 +681,21 @@ class qbee_deframer(object):
     __repr__ = _swig_repr
 
     def make(length_min=32, length_max=500):
-        """make(int length_min=32, int length_max=500) -> qbee_deframer_sptr"""
+        """
+        make(int length_min=32, int length_max=500) -> qbee_deframer_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_deframer.
+
+        To avoid accidental use of raw pointers, qbee::qbee_deframer's constructor is in a private implementation class. qbee::qbee_deframer::make is the public interface for creating new instances.
+
+        Args:
+            length_min : 
+            length_max : 
+        """
         return _qbee_swig.qbee_deframer_make(length_min, length_max)
 
     make = staticmethod(make)
@@ -641,7 +705,21 @@ qbee_deframer_swigregister = _qbee_swig.qbee_deframer_swigregister
 qbee_deframer_swigregister(qbee_deframer)
 
 def qbee_deframer_make(length_min=32, length_max=500):
-    """qbee_deframer_make(int length_min=32, int length_max=500) -> qbee_deframer_sptr"""
+    """
+    qbee_deframer_make(int length_min=32, int length_max=500) -> qbee_deframer_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_deframer.
+
+    To avoid accidental use of raw pointers, qbee::qbee_deframer's constructor is in a private implementation class. qbee::qbee_deframer::make is the public interface for creating new instances.
+
+    Args:
+        length_min : 
+        length_max : 
+    """
     return _qbee_swig.qbee_deframer_make(length_min, length_max)
 
 class qbee_deframer_sptr(object):
@@ -669,7 +747,21 @@ class qbee_deframer_sptr(object):
     __del__ = lambda self: None
 
     def make(self, length_min=32, length_max=500):
-        """make(qbee_deframer_sptr self, int length_min=32, int length_max=500) -> qbee_deframer_sptr"""
+        """
+        make(qbee_deframer_sptr self, int length_min=32, int length_max=500) -> qbee_deframer_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_deframer.
+
+        To avoid accidental use of raw pointers, qbee::qbee_deframer's constructor is in a private implementation class. qbee::qbee_deframer::make is the public interface for creating new instances.
+
+        Args:
+            length_min : 
+            length_max : 
+        """
         return _qbee_swig.qbee_deframer_sptr_make(self, length_min, length_max)
 
 
@@ -982,7 +1074,18 @@ qbee_deframer_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), 
 qbee_deframer = qbee_deframer.make;
 
 class qbee_segmentor(object):
-    """Proxy of C++ gr::qbee::qbee_segmentor class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_segmentor.
+
+    To avoid accidental use of raw pointers, qbee::qbee_segmentor's constructor is in a private implementation class. qbee::qbee_segmentor::make is the public interface for creating new instances.
+
+    Args:
+        frame_length : 
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -991,7 +1094,20 @@ class qbee_segmentor(object):
     __repr__ = _swig_repr
 
     def make(frame_length):
-        """make(int frame_length) -> qbee_segmentor_sptr"""
+        """
+        make(int frame_length) -> qbee_segmentor_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_segmentor.
+
+        To avoid accidental use of raw pointers, qbee::qbee_segmentor's constructor is in a private implementation class. qbee::qbee_segmentor::make is the public interface for creating new instances.
+
+        Args:
+            frame_length : 
+        """
         return _qbee_swig.qbee_segmentor_make(frame_length)
 
     make = staticmethod(make)
@@ -1001,7 +1117,20 @@ qbee_segmentor_swigregister = _qbee_swig.qbee_segmentor_swigregister
 qbee_segmentor_swigregister(qbee_segmentor)
 
 def qbee_segmentor_make(frame_length):
-    """qbee_segmentor_make(int frame_length) -> qbee_segmentor_sptr"""
+    """
+    qbee_segmentor_make(int frame_length) -> qbee_segmentor_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_segmentor.
+
+    To avoid accidental use of raw pointers, qbee::qbee_segmentor's constructor is in a private implementation class. qbee::qbee_segmentor::make is the public interface for creating new instances.
+
+    Args:
+        frame_length : 
+    """
     return _qbee_swig.qbee_segmentor_make(frame_length)
 
 class qbee_segmentor_sptr(object):
@@ -1029,7 +1158,20 @@ class qbee_segmentor_sptr(object):
     __del__ = lambda self: None
 
     def make(self, frame_length):
-        """make(qbee_segmentor_sptr self, int frame_length) -> qbee_segmentor_sptr"""
+        """
+        make(qbee_segmentor_sptr self, int frame_length) -> qbee_segmentor_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_segmentor.
+
+        To avoid accidental use of raw pointers, qbee::qbee_segmentor's constructor is in a private implementation class. qbee::qbee_segmentor::make is the public interface for creating new instances.
+
+        Args:
+            frame_length : 
+        """
         return _qbee_swig.qbee_segmentor_sptr_make(self, frame_length)
 
 
@@ -1340,6 +1482,416 @@ qbee_segmentor_sptr_swigregister(qbee_segmentor_sptr)
 
 qbee_segmentor_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 qbee_segmentor = qbee_segmentor.make;
+
+class qbee_framer(object):
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_framer.
+
+    To avoid accidental use of raw pointers, qbee::qbee_framer's constructor is in a private implementation class. qbee::qbee_framer::make is the public interface for creating new instances.
+
+    Args:
+        frame_tag_name : 
+    """
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+
+    def make(frame_tag_name):
+        """
+        make(std::string const frame_tag_name) -> qbee_framer_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_framer.
+
+        To avoid accidental use of raw pointers, qbee::qbee_framer's constructor is in a private implementation class. qbee::qbee_framer::make is the public interface for creating new instances.
+
+        Args:
+            frame_tag_name : 
+        """
+        return _qbee_swig.qbee_framer_make(frame_tag_name)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _qbee_swig.delete_qbee_framer
+    __del__ = lambda self: None
+qbee_framer_swigregister = _qbee_swig.qbee_framer_swigregister
+qbee_framer_swigregister(qbee_framer)
+
+def qbee_framer_make(frame_tag_name):
+    """
+    qbee_framer_make(std::string const frame_tag_name) -> qbee_framer_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of qbee::qbee_framer.
+
+    To avoid accidental use of raw pointers, qbee::qbee_framer's constructor is in a private implementation class. qbee::qbee_framer::make is the public interface for creating new instances.
+
+    Args:
+        frame_tag_name : 
+    """
+    return _qbee_swig.qbee_framer_make(frame_tag_name)
+
+class qbee_framer_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::qbee::qbee_framer)> class."""
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        """
+        __init__(boost::shared_ptr<(gr::qbee::qbee_framer)> self) -> qbee_framer_sptr
+        __init__(boost::shared_ptr<(gr::qbee::qbee_framer)> self, qbee_framer p) -> qbee_framer_sptr
+        """
+        this = _qbee_swig.new_qbee_framer_sptr(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+
+    def __deref__(self):
+        """__deref__(qbee_framer_sptr self) -> qbee_framer"""
+        return _qbee_swig.qbee_framer_sptr___deref__(self)
+
+    __swig_destroy__ = _qbee_swig.delete_qbee_framer_sptr
+    __del__ = lambda self: None
+
+    def make(self, frame_tag_name):
+        """
+        make(qbee_framer_sptr self, std::string const frame_tag_name) -> qbee_framer_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of qbee::qbee_framer.
+
+        To avoid accidental use of raw pointers, qbee::qbee_framer's constructor is in a private implementation class. qbee::qbee_framer::make is the public interface for creating new instances.
+
+        Args:
+            frame_tag_name : 
+        """
+        return _qbee_swig.qbee_framer_sptr_make(self, frame_tag_name)
+
+
+    def history(self):
+        """history(qbee_framer_sptr self) -> unsigned int"""
+        return _qbee_swig.qbee_framer_sptr_history(self)
+
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(qbee_framer_sptr self, int which, int delay)
+        declare_sample_delay(qbee_framer_sptr self, unsigned int delay)
+        """
+        return _qbee_swig.qbee_framer_sptr_declare_sample_delay(self, *args)
+
+
+    def sample_delay(self, which):
+        """sample_delay(qbee_framer_sptr self, int which) -> unsigned int"""
+        return _qbee_swig.qbee_framer_sptr_sample_delay(self, which)
+
+
+    def output_multiple(self):
+        """output_multiple(qbee_framer_sptr self) -> int"""
+        return _qbee_swig.qbee_framer_sptr_output_multiple(self)
+
+
+    def relative_rate(self):
+        """relative_rate(qbee_framer_sptr self) -> double"""
+        return _qbee_swig.qbee_framer_sptr_relative_rate(self)
+
+
+    def start(self):
+        """start(qbee_framer_sptr self) -> bool"""
+        return _qbee_swig.qbee_framer_sptr_start(self)
+
+
+    def stop(self):
+        """stop(qbee_framer_sptr self) -> bool"""
+        return _qbee_swig.qbee_framer_sptr_stop(self)
+
+
+    def nitems_read(self, which_input):
+        """nitems_read(qbee_framer_sptr self, unsigned int which_input) -> uint64_t"""
+        return _qbee_swig.qbee_framer_sptr_nitems_read(self, which_input)
+
+
+    def nitems_written(self, which_output):
+        """nitems_written(qbee_framer_sptr self, unsigned int which_output) -> uint64_t"""
+        return _qbee_swig.qbee_framer_sptr_nitems_written(self, which_output)
+
+
+    def max_noutput_items(self):
+        """max_noutput_items(qbee_framer_sptr self) -> int"""
+        return _qbee_swig.qbee_framer_sptr_max_noutput_items(self)
+
+
+    def set_max_noutput_items(self, m):
+        """set_max_noutput_items(qbee_framer_sptr self, int m)"""
+        return _qbee_swig.qbee_framer_sptr_set_max_noutput_items(self, m)
+
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(qbee_framer_sptr self)"""
+        return _qbee_swig.qbee_framer_sptr_unset_max_noutput_items(self)
+
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(qbee_framer_sptr self) -> bool"""
+        return _qbee_swig.qbee_framer_sptr_is_set_max_noutput_items(self)
+
+
+    def set_min_noutput_items(self, m):
+        """set_min_noutput_items(qbee_framer_sptr self, int m)"""
+        return _qbee_swig.qbee_framer_sptr_set_min_noutput_items(self, m)
+
+
+    def min_noutput_items(self):
+        """min_noutput_items(qbee_framer_sptr self) -> int"""
+        return _qbee_swig.qbee_framer_sptr_min_noutput_items(self)
+
+
+    def max_output_buffer(self, i):
+        """max_output_buffer(qbee_framer_sptr self, int i) -> long"""
+        return _qbee_swig.qbee_framer_sptr_max_output_buffer(self, i)
+
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(qbee_framer_sptr self, long max_output_buffer)
+        set_max_output_buffer(qbee_framer_sptr self, int port, long max_output_buffer)
+        """
+        return _qbee_swig.qbee_framer_sptr_set_max_output_buffer(self, *args)
+
+
+    def min_output_buffer(self, i):
+        """min_output_buffer(qbee_framer_sptr self, int i) -> long"""
+        return _qbee_swig.qbee_framer_sptr_min_output_buffer(self, i)
+
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(qbee_framer_sptr self, long min_output_buffer)
+        set_min_output_buffer(qbee_framer_sptr self, int port, long min_output_buffer)
+        """
+        return _qbee_swig.qbee_framer_sptr_set_min_output_buffer(self, *args)
+
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_noutput_items(self)
+
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_noutput_items_avg(self)
+
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_noutput_items_var(self)
+
+
+    def pc_nproduced(self):
+        """pc_nproduced(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_nproduced(self)
+
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_nproduced_avg(self)
+
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_nproduced_var(self)
+
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(qbee_framer_sptr self, int which) -> float
+        pc_input_buffers_full(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_input_buffers_full(self, *args)
+
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(qbee_framer_sptr self, int which) -> float
+        pc_input_buffers_full_avg(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_input_buffers_full_avg(self, *args)
+
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(qbee_framer_sptr self, int which) -> float
+        pc_input_buffers_full_var(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_input_buffers_full_var(self, *args)
+
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(qbee_framer_sptr self, int which) -> float
+        pc_output_buffers_full(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_output_buffers_full(self, *args)
+
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(qbee_framer_sptr self, int which) -> float
+        pc_output_buffers_full_avg(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_output_buffers_full_avg(self, *args)
+
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(qbee_framer_sptr self, int which) -> float
+        pc_output_buffers_full_var(qbee_framer_sptr self) -> pmt_vector_float
+        """
+        return _qbee_swig.qbee_framer_sptr_pc_output_buffers_full_var(self, *args)
+
+
+    def pc_work_time(self):
+        """pc_work_time(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_work_time(self)
+
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_work_time_avg(self)
+
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_work_time_var(self)
+
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_work_time_total(self)
+
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(qbee_framer_sptr self) -> float"""
+        return _qbee_swig.qbee_framer_sptr_pc_throughput_avg(self)
+
+
+    def set_processor_affinity(self, mask):
+        """set_processor_affinity(qbee_framer_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _qbee_swig.qbee_framer_sptr_set_processor_affinity(self, mask)
+
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(qbee_framer_sptr self)"""
+        return _qbee_swig.qbee_framer_sptr_unset_processor_affinity(self)
+
+
+    def processor_affinity(self):
+        """processor_affinity(qbee_framer_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _qbee_swig.qbee_framer_sptr_processor_affinity(self)
+
+
+    def active_thread_priority(self):
+        """active_thread_priority(qbee_framer_sptr self) -> int"""
+        return _qbee_swig.qbee_framer_sptr_active_thread_priority(self)
+
+
+    def thread_priority(self):
+        """thread_priority(qbee_framer_sptr self) -> int"""
+        return _qbee_swig.qbee_framer_sptr_thread_priority(self)
+
+
+    def set_thread_priority(self, priority):
+        """set_thread_priority(qbee_framer_sptr self, int priority) -> int"""
+        return _qbee_swig.qbee_framer_sptr_set_thread_priority(self, priority)
+
+
+    def name(self):
+        """name(qbee_framer_sptr self) -> std::string"""
+        return _qbee_swig.qbee_framer_sptr_name(self)
+
+
+    def symbol_name(self):
+        """symbol_name(qbee_framer_sptr self) -> std::string"""
+        return _qbee_swig.qbee_framer_sptr_symbol_name(self)
+
+
+    def input_signature(self):
+        """input_signature(qbee_framer_sptr self) -> io_signature_sptr"""
+        return _qbee_swig.qbee_framer_sptr_input_signature(self)
+
+
+    def output_signature(self):
+        """output_signature(qbee_framer_sptr self) -> io_signature_sptr"""
+        return _qbee_swig.qbee_framer_sptr_output_signature(self)
+
+
+    def unique_id(self):
+        """unique_id(qbee_framer_sptr self) -> long"""
+        return _qbee_swig.qbee_framer_sptr_unique_id(self)
+
+
+    def to_basic_block(self):
+        """to_basic_block(qbee_framer_sptr self) -> basic_block_sptr"""
+        return _qbee_swig.qbee_framer_sptr_to_basic_block(self)
+
+
+    def check_topology(self, ninputs, noutputs):
+        """check_topology(qbee_framer_sptr self, int ninputs, int noutputs) -> bool"""
+        return _qbee_swig.qbee_framer_sptr_check_topology(self, ninputs, noutputs)
+
+
+    def alias(self):
+        """alias(qbee_framer_sptr self) -> std::string"""
+        return _qbee_swig.qbee_framer_sptr_alias(self)
+
+
+    def set_block_alias(self, name):
+        """set_block_alias(qbee_framer_sptr self, std::string name)"""
+        return _qbee_swig.qbee_framer_sptr_set_block_alias(self, name)
+
+
+    def _post(self, which_port, msg):
+        """_post(qbee_framer_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _qbee_swig.qbee_framer_sptr__post(self, which_port, msg)
+
+
+    def message_ports_in(self):
+        """message_ports_in(qbee_framer_sptr self) -> swig_int_ptr"""
+        return _qbee_swig.qbee_framer_sptr_message_ports_in(self)
+
+
+    def message_ports_out(self):
+        """message_ports_out(qbee_framer_sptr self) -> swig_int_ptr"""
+        return _qbee_swig.qbee_framer_sptr_message_ports_out(self)
+
+
+    def message_subscribers(self, which_port):
+        """message_subscribers(qbee_framer_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _qbee_swig.qbee_framer_sptr_message_subscribers(self, which_port)
+
+qbee_framer_sptr_swigregister = _qbee_swig.qbee_framer_sptr_swigregister
+qbee_framer_sptr_swigregister(qbee_framer_sptr)
+
+
+qbee_framer_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+qbee_framer = qbee_framer.make;
 
 
 

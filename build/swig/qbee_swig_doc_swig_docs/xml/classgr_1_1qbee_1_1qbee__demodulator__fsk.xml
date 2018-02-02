@@ -47,24 +47,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1">
+      <node id="5">
         <label>gr::hier_block2</label>
       </node>
-      <node id="0">
+      <node id="4">
         <label>gr::qbee::qbee_demodulator_fsk</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
+      <node id="7">
         <label>gr::hier_block2</label>
       </node>
-      <node id="2">
+      <node id="6">
         <label>gr::qbee::qbee_demodulator_fsk</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

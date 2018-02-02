@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Reed-Solomon Testing
 # Author: Moses Browne Mwakyanjala
-# Generated: Thu Feb  1 15:45:44 2018
+# Generated: Fri Feb  2 15:24:37 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -19,7 +19,6 @@ if __name__ == '__main__':
 
 from PyQt4 import Qt
 from gnuradio import blocks
-from gnuradio import digital
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio.eng_option import eng_option
@@ -64,23 +63,23 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.qbee_qbee_segmentor_0 = qbee.qbee_segmentor(81)
+        self.qbee_qbee_segmentor_0 = qbee.qbee_segmentor(49)
+        self.qbee_qbee_framer_0 = qbee.qbee_framer('')
         self.qbee_qbee_deframer_0 = qbee.qbee_deframer(32, 500)
-        self.digital_hdlc_framer_pb_0 = digital.hdlc_framer_pb('')
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_socket_pdu_0 = blocks.socket_pdu("TCP_SERVER", '', '5001', 10000, False)
         self.blocks_message_debug_0 = blocks.message_debug()
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/examples/qbee_packets/qbee.bin', True)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/examples/qbee_packets/qbee_raw.bin', True)
 
         ##################################################
         # Connections
         ##################################################
         self.msg_connect((self.qbee_qbee_deframer_0, 'out'), (self.blocks_message_debug_0, 'print_pdu'))
         self.msg_connect((self.qbee_qbee_deframer_0, 'out'), (self.blocks_socket_pdu_0, 'pdus'))
-        self.msg_connect((self.qbee_qbee_segmentor_0, 'out'), (self.digital_hdlc_framer_pb_0, 'in'))
+        self.msg_connect((self.qbee_qbee_segmentor_0, 'out'), (self.qbee_qbee_framer_0, 'in'))
         self.connect((self.blocks_file_source_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_throttle_0, 0), (self.qbee_qbee_segmentor_0, 0))
-        self.connect((self.digital_hdlc_framer_pb_0, 0), (self.qbee_qbee_deframer_0, 0))
+        self.connect((self.qbee_qbee_framer_0, 0), (self.qbee_qbee_deframer_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")

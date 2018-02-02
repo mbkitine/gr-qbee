@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1qbee_1_1qbee__deframer" kind="class"><name>gr::qbee::qbee_deframer</name>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer_1a9314dad1b7514a690f5d0f387782025c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer_1a06ecf23cb2952dba1511ac2d38d701c3" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__deframer__impl" kind="class"><name>gr::qbee::qbee_deframer_impl</name>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a5acd774d8c4ef9c211d868ce96a17539" kind="variable"><name>d_length_min</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a0b50541bfb71e21fd9fa9f3bc42eb12c" kind="variable"><name>d_length_max</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a25b41ce3ecd9bf20930a8b3d9e2d1251" kind="variable"><name>d_ones</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a98b5d9231939f0b0f243d26cb777b172" kind="variable"><name>d_bytectr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a1d91b46e6c25b5c293258b0e3b17563c" kind="variable"><name>d_bitctr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a3c2a96f4a4a1c09141153bb11d701039" kind="variable"><name>d_pktbuf</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a425d4370e3b10e46ca248fbb726bdee4" kind="variable"><name>d_icdbuf</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a4b86cc0189ff751f856ba894951efc31" kind="variable"><name>d_rsbuf</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a8aa969ace2ad0648957a68824cab6735" kind="variable"><name>d_ax25headerbuf</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1aabd2566dca8decaa086428ed98d15f7c" kind="function"><name>qbee_deframer_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a03c2c1902bea1fae4deb3863c0df3a02" kind="function"><name>~qbee_deframer_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer__impl_1a53999204d75246d123a6377210850b0e" kind="function"><name>work</name></member>
+  </compound>
   <compound refid="classgr_1_1qbee_1_1qbee__demodulator__fsk" kind="class"><name>gr::qbee::qbee_demodulator_fsk</name>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk_1ad1acf658fdbda2a44627962912d0c471" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk_1a187be1d0d50d16a837455069086d3e13" kind="function"><name>make</name></member>
@@ -7,6 +25,39 @@
   <compound refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl" kind="class"><name>gr::qbee::qbee_demodulator_fsk_impl</name>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl_1a22a3f900e9848ca08bdfb0a180c11317" kind="function"><name>qbee_demodulator_fsk_impl</name></member>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl_1aaf30b3112e40268c3c15bf3c1e1e5a90" kind="function"><name>~qbee_demodulator_fsk_impl</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__framer" kind="class"><name>gr::qbee::qbee_framer</name>
+    <member refid="classgr_1_1qbee_1_1qbee__framer_1a51759ee1f0a1741360fe5bb045890766" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer_1a5c8e79b26cab88bb37eb19b9b7c169ae" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__framer__impl" kind="class"><name>gr::qbee::qbee_framer_impl</name>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1ada5eb122fd339dfc5ea942a37f80cf6c" kind="variable"><name>d_leftovers</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1aab1d7a4751ec6d465ef15d8f1fd4840a" kind="variable"><name>d_frame_tag</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1a89cdc7d46a4f384cfe01cdaf934b4922" kind="variable"><name>d_me</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1ad58c444bff1f384101379ca804f22278" kind="function"><name>crc_ccitt</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1a45e29318c3969ee84d3eeb1d51981fac" kind="function"><name>unpack</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1a0880392a083efbc904ce9f37761cd8a1" kind="function"><name>stuff</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1a25870cbdc4a7e5988e61e52f598e77ed" kind="function"><name>qbee_framer_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1ac512cb0ea05b350f0d58219f03cb8b5c" kind="function"><name>~qbee_framer_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer__impl_1ae2a4a878a874852f23e84e86224ad516" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__nrzi__decoder" kind="class"><name>gr::qbee::qbee_nrzi_decoder</name>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder_1ac0965ecc837bd0925d75a94ae716be79" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder_1a375eaff2f9e676601b28408ef0a7259a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__nrzi__decoder__impl" kind="class"><name>gr::qbee::qbee_nrzi_decoder_impl</name>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder__impl_1a781cb5170c4e87f95b43e7437b6944f7" kind="function"><name>qbee_nrzi_decoder_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder__impl_1a57a021429026b6f9a5e1d51682a39a35" kind="function"><name>~qbee_nrzi_decoder_impl</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__segmentor" kind="class"><name>gr::qbee::qbee_segmentor</name>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor_1a0f40a14677e901bf61ed664e6678fca5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor_1aac789a95a0a6581684768ad06c48e0bf" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__segmentor__impl" kind="class"><name>gr::qbee::qbee_segmentor_impl</name>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor__impl_1ad7de6bb33af6710c85f677c70bec5832" kind="variable"><name>d_frame_length</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor__impl_1a401caea6e0f395dc4709864513bc594f" kind="function"><name>qbee_segmentor_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor__impl_1add5890ed2d74295c37c0663c3747e6f8" kind="function"><name>~qbee_segmentor_impl</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor__impl_1a1f79f6a9db1d1a7af978a23c3a2db4da" kind="function"><name>work</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
@@ -21,9 +72,70 @@
   </compound>
   <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
   </compound>
+  <compound refid="qbee__deframer_8h" kind="file"><name>qbee_deframer.h</name>
+  </compound>
+  <compound refid="qbee__deframer__impl_8h" kind="file"><name>qbee_deframer_impl.h</name>
+  </compound>
   <compound refid="qbee__demodulator__fsk_8h" kind="file"><name>qbee_demodulator_fsk.h</name>
   </compound>
   <compound refid="qbee__demodulator__fsk__impl_8h" kind="file"><name>qbee_demodulator_fsk_impl.h</name>
+  </compound>
+  <compound refid="qbee__framer_8h" kind="file"><name>qbee_framer.h</name>
+  </compound>
+  <compound refid="qbee__framer__impl_8h" kind="file"><name>qbee_framer_impl.h</name>
+  </compound>
+  <compound refid="qbee__nrzi__decoder_8h" kind="file"><name>qbee_nrzi_decoder.h</name>
+  </compound>
+  <compound refid="qbee__nrzi__decoder__impl_8h" kind="file"><name>qbee_nrzi_decoder_impl.h</name>
+  </compound>
+  <compound refid="qbee__segmentor_8h" kind="file"><name>qbee_segmentor.h</name>
+  </compound>
+  <compound refid="qbee__segmentor__impl_8h" kind="file"><name>qbee_segmentor_impl.h</name>
+    <member refid="qbee__segmentor__impl_8h_1ad16d6719466bd11ec50478107d79d2b1" kind="typedef"><name>byte</name></member>
+  </compound>
+  <compound refid="rs__decode_8h" kind="file"><name>rs_decode.h</name>
+    <member refid="rs__decode_8h_1a382fa2d1bf25ce9ab8c9010c085c988f" kind="define"><name>RS_DECODE_H_</name></member>
+    <member refid="rs__decode_8h_1a3ed9b2483e4d6616a203769ad381c97c" kind="define"><name>MODNN</name></member>
+    <member refid="rs__decode_8h_1afdc383f8992f4a960bb22998f57b6d37" kind="define"><name>MM</name></member>
+    <member refid="rs__decode_8h_1a170755e30c36be4904106b7bb279b1ec" kind="define"><name>NN</name></member>
+    <member refid="rs__decode_8h_1afae14aea58e6520b2057147833c699de" kind="define"><name>ALPHA_TO</name></member>
+    <member refid="rs__decode_8h_1a690b4c8564b1cb507383e7a78f4cd6dc" kind="define"><name>INDEX_OF</name></member>
+    <member refid="rs__decode_8h_1a90fbc87e4b99a54543c8f37087cb4f03" kind="define"><name>GENPOLY</name></member>
+    <member refid="rs__decode_8h_1a5f5b4d84f10e6a71bef7c65548a8e317" kind="define"><name>NROOTS</name></member>
+    <member refid="rs__decode_8h_1a264b36b13386e3f62fe69e04711bc006" kind="define"><name>FCR</name></member>
+    <member refid="rs__decode_8h_1a6dd0302d2b9ced6e396b9182a6287b9e" kind="define"><name>PRIM</name></member>
+    <member refid="rs__decode_8h_1a8487c20a46e1e08f7aeabec7cef80945" kind="define"><name>IPRIM</name></member>
+    <member refid="rs__decode_8h_1a323d60150d94a9f5f599bb97726ac384" kind="define"><name>PAD</name></member>
+    <member refid="rs__decode_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kind="define"><name>MIN</name></member>
+    <member refid="rs__decode_8h_1a0d158f1e3af2ab523eb8423db3e5bd6e" kind="define"><name>A0</name></member>
+    <member refid="rs__decode_8h_1ae91c9d70e1e2c8b657e51de1fff60ada" kind="typedef"><name>data_t</name></member>
+    <member refid="rs__decode_8h_1a54225588d221c68abefd6941b9c0ab0d" kind="variable"><name>CCSDS_alpha_to</name></member>
+    <member refid="rs__decode_8h_1a319dc0c9a87b1c30a62f51ffda768849" kind="variable"><name>CCSDS_index_of</name></member>
+    <member refid="rs__decode_8h_1a0e0709cc95ec60f38f3f8014cbc79e05" kind="variable"><name>CCSDS_poly</name></member>
+    <member refid="rs__decode_8h_1af07e1212c8349f4ef6165d6d262ff121" kind="function"><name>decode_rs_8</name></member>
+    <member refid="rs__decode_8h_1aa185022967929586fd5824ec159594af" kind="function"><name>mod255</name></member>
+  </compound>
+  <compound refid="rs__encode_8h" kind="file"><name>rs_encode.h</name>
+    <member refid="rs__encode_8h_1ad0b8d0cd502cc94048ac7df0d7520223" kind="define"><name>RS_ENCODE_H_</name></member>
+    <member refid="rs__encode_8h_1a3ed9b2483e4d6616a203769ad381c97c" kind="define"><name>MODNN</name></member>
+    <member refid="rs__encode_8h_1afdc383f8992f4a960bb22998f57b6d37" kind="define"><name>MM</name></member>
+    <member refid="rs__encode_8h_1a170755e30c36be4904106b7bb279b1ec" kind="define"><name>NN</name></member>
+    <member refid="rs__encode_8h_1afae14aea58e6520b2057147833c699de" kind="define"><name>ALPHA_TO</name></member>
+    <member refid="rs__encode_8h_1a690b4c8564b1cb507383e7a78f4cd6dc" kind="define"><name>INDEX_OF</name></member>
+    <member refid="rs__encode_8h_1a90fbc87e4b99a54543c8f37087cb4f03" kind="define"><name>GENPOLY</name></member>
+    <member refid="rs__encode_8h_1a5f5b4d84f10e6a71bef7c65548a8e317" kind="define"><name>NROOTS</name></member>
+    <member refid="rs__encode_8h_1a264b36b13386e3f62fe69e04711bc006" kind="define"><name>FCR</name></member>
+    <member refid="rs__encode_8h_1a6dd0302d2b9ced6e396b9182a6287b9e" kind="define"><name>PRIM</name></member>
+    <member refid="rs__encode_8h_1a8487c20a46e1e08f7aeabec7cef80945" kind="define"><name>IPRIM</name></member>
+    <member refid="rs__encode_8h_1a323d60150d94a9f5f599bb97726ac384" kind="define"><name>PAD</name></member>
+    <member refid="rs__encode_8h_1a3acffbd305ee72dcd4593c0d8af64a4f" kind="define"><name>MIN</name></member>
+    <member refid="rs__encode_8h_1a0d158f1e3af2ab523eb8423db3e5bd6e" kind="define"><name>A0</name></member>
+    <member refid="rs__encode_8h_1ae91c9d70e1e2c8b657e51de1fff60ada" kind="typedef"><name>data_t</name></member>
+    <member refid="rs__encode_8h_1a54225588d221c68abefd6941b9c0ab0d" kind="variable"><name>CCSDS_alpha_to</name></member>
+    <member refid="rs__encode_8h_1a319dc0c9a87b1c30a62f51ffda768849" kind="variable"><name>CCSDS_index_of</name></member>
+    <member refid="rs__encode_8h_1a0e0709cc95ec60f38f3f8014cbc79e05" kind="variable"><name>CCSDS_poly</name></member>
+    <member refid="rs__encode_8h_1a888ab25ac1f787cba08bfbf06b0cc22f" kind="function"><name>encode_rs_8</name></member>
+    <member refid="rs__encode_8h_1aa185022967929586fd5824ec159594af" kind="function"><name>mod255</name></member>
   </compound>
   <compound refid="group__block" kind="group"><name>block</name>
   </compound>

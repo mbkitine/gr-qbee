@@ -1,8 +1,24 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1qbee_1_1qbee__deframer" kind="class"><name>gr::qbee::qbee_deframer</name>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer_1a9314dad1b7514a690f5d0f387782025c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__deframer_1a06ecf23cb2952dba1511ac2d38d701c3" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1qbee_1_1qbee__demodulator__fsk" kind="class"><name>gr::qbee::qbee_demodulator_fsk</name>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk_1ad1acf658fdbda2a44627962912d0c471" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1qbee_1_1qbee__demodulator__fsk_1a187be1d0d50d16a837455069086d3e13" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__framer" kind="class"><name>gr::qbee::qbee_framer</name>
+    <member refid="classgr_1_1qbee_1_1qbee__framer_1a51759ee1f0a1741360fe5bb045890766" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__framer_1a5c8e79b26cab88bb37eb19b9b7c169ae" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__nrzi__decoder" kind="class"><name>gr::qbee::qbee_nrzi_decoder</name>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder_1ac0965ecc837bd0925d75a94ae716be79" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__nrzi__decoder_1a375eaff2f9e676601b28408ef0a7259a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1qbee_1_1qbee__segmentor" kind="class"><name>gr::qbee::qbee_segmentor</name>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor_1a0f40a14677e901bf61ed664e6678fca5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1qbee_1_1qbee__segmentor_1aac789a95a0a6581684768ad06c48e0bf" kind="function"><name>make</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
@@ -13,7 +29,15 @@
   <compound refid="api_8h" kind="file"><name>api.h</name>
     <member refid="api_8h_1a0925aedcf9198d411957573c3d107bc2" kind="define"><name>QBEE_API</name></member>
   </compound>
+  <compound refid="qbee__deframer_8h" kind="file"><name>qbee_deframer.h</name>
+  </compound>
   <compound refid="qbee__demodulator__fsk_8h" kind="file"><name>qbee_demodulator_fsk.h</name>
+  </compound>
+  <compound refid="qbee__framer_8h" kind="file"><name>qbee_framer.h</name>
+  </compound>
+  <compound refid="qbee__nrzi__decoder_8h" kind="file"><name>qbee_nrzi_decoder.h</name>
+  </compound>
+  <compound refid="qbee__segmentor_8h" kind="file"><name>qbee_segmentor.h</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/include</name>
   </compound>

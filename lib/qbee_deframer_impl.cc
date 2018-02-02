@@ -61,18 +61,20 @@ namespace gr {
 
     inline void rs_dewrapper(unsigned char *ax25_pkt,unsigned char *ax25_header, unsigned char* rs_pkt, int len)
     {
+      /*QBEE packet format
+	------------------------------------------------------------
+	| AX.25 header (16) | CCSDS RS(255,223) (X bytes) | CRC(2) |
+	------------------------------------------------------------
+       */
+      
       int index = 0;
       
-      //Extracting ax_25 header
+      //Extracting ax_25 header. To be reappended later
       memcpy(&ax25_header[0],&ax25_pkt[0],16);
 
       //Extracting rs_pkt
       memcpy(&rs_pkt[0], &ax25_pkt[16], len - (16 + 2));
-      /*
-	for(int i = 16; i <len-2;i++)
-	{
-	ax25_without_crc[i-16] = ax25_with_crc[i];
-	}*/
+ 
       return;
     }
     
@@ -168,24 +170,15 @@ namespace gr {
 	      //Extracting RS codeword by stripping AX.25 header and CRC
 	      rs_dewrapper(d_pktbuf,d_ax25headerbuf, d_rsbuf,len);
 	      
-	      //extract_rs(d_pktbuf,d_rsbuf,len);
-	      //len -= (2 + 16) ;
-	      //printf("AX.25 header\n");
-	      //hexdump(d_ax25headerbuf,16);
-	      //printf("RS codeword\n");
-	      //hexdump(d_rsbuf,rs_len);
-	      
-	      //ICD wrapper
-	      // icd_wrapper(d_icdbuf,d_pktbuf,len);
-
 	      //Reed-Solomon decoding
 	      rs_res = decode_rs_8(&d_rsbuf[0], NULL, 0, 255 - rs_len + 1);
-	     
+	      printf("\n Erros = %d\n",rs_res);
+	      
 	      if (rs_res >= 0)
 		{
 		  printf("\n Reed solomon errors corrected = %d\n",rs_res);
 		  //ICD wrapper
-		  icd_wrapper(d_icdbuf,d_ax25headerbuf,d_rsbuf,rs_len - 32,rs_res,d_icdbuf_len);
+		  icd_wrapper(d_icdbuf,d_ax25headerbuf,d_rsbuf,rs_len,rs_res - 32,d_icdbuf_len);//,rs_len - 32
 		  pmt::pmt_t pdu(pmt::cons(pmt::PMT_NIL,
 					   pmt::make_blob(d_icdbuf, d_icdbuf_len)));
 		  message_port_pub(pmt::mp("out"), pdu);

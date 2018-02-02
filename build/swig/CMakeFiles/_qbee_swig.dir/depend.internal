@@ -5,6 +5,7 @@ swig/CMakeFiles/_qbee_swig.dir/qbee_swigPYTHON_wrap.cxx.o
  ../include/qbee/api.h
  ../include/qbee/qbee_deframer.h
  ../include/qbee/qbee_demodulator_fsk.h
+ ../include/qbee/qbee_framer.h
  ../include/qbee/qbee_nrzi_decoder.h
  ../include/qbee/qbee_segmentor.h
  /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/build/swig/qbee_swigPYTHON_wrap.cxx

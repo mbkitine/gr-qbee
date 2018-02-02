@@ -2,12 +2,20 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="namespacegr_1_1qbee" kind="namespace" language="C++">
     <compoundname>gr::qbee</compoundname>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__deframer" prot="public">gr::qbee::qbee_deframer</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__deframer__impl" prot="public">gr::qbee::qbee_deframer_impl</innerclass>
     <innerclass refid="classgr_1_1qbee_1_1qbee__demodulator__fsk" prot="public">gr::qbee::qbee_demodulator_fsk</innerclass>
     <innerclass refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl" prot="public">gr::qbee::qbee_demodulator_fsk_impl</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__framer" prot="public">gr::qbee::qbee_framer</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__framer__impl" prot="public">gr::qbee::qbee_framer_impl</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__nrzi__decoder" prot="public">gr::qbee::qbee_nrzi_decoder</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__nrzi__decoder__impl" prot="public">gr::qbee::qbee_nrzi_decoder_impl</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__segmentor" prot="public">gr::qbee::qbee_segmentor</innerclass>
+    <innerclass refid="classgr_1_1qbee_1_1qbee__segmentor__impl" prot="public">gr::qbee::qbee_segmentor_impl</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/include/qbee/qbee_demodulator_fsk.h" line="29" column="1"/>
+    <location file="/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/include/qbee/qbee_deframer.h" line="29" column="1"/>
   </compounddef>
 </doxygen>

@@ -1107,7 +1107,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/mbkitine/Desktop/Signals/mode6-576000.bin</value>
+      <value>/home/mbkitine/Desktop/Signals/SE01/qbee50_20171227-071001_iq.raw</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1319,7 +1319,7 @@
     </param>
     <param>
       <key>samples_per_second</key>
-      <value>samp_rate*12</value>
+      <value>195312</value>
     </param>
     <param>
       <key>type</key>
@@ -1511,7 +1511,7 @@
     </param>
     <param>
       <key>w</key>
-      <value>0.0005</value>
+      <value>0.02</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1597,7 +1597,7 @@
     </param>
     <param>
       <key>decim</key>
-      <value>12</value>
+      <value>195312/48000</value>
     </param>
     <param>
       <key>_enabled</key>

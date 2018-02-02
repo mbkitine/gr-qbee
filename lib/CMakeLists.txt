@@ -24,14 +24,14 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND qbee_sources
     qbee_demodulator_fsk_impl.cc
     qbee_nrzi_decoder_impl.cc
     qbee_deframer_impl.cc
     rs_decode.cc
+    rs_encode.cc
     qbee_segmentor_impl.cc
-)
+    qbee_framer_impl.cc )
 
 set(qbee_sources "${qbee_sources}" PARENT_SCOPE)
 if(NOT qbee_sources)

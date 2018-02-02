@@ -3,7 +3,11 @@
   <compounddef id="dir_5b92a05744f89fb79832c3bccb282714" kind="dir">
     <compoundname>/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/include/qbee</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="qbee__deframer_8h">qbee_deframer.h</innerfile>
     <innerfile refid="qbee__demodulator__fsk_8h">qbee_demodulator_fsk.h</innerfile>
+    <innerfile refid="qbee__framer_8h">qbee_framer.h</innerfile>
+    <innerfile refid="qbee__nrzi__decoder_8h">qbee_nrzi_decoder.h</innerfile>
+    <innerfile refid="qbee__segmentor_8h">qbee_segmentor.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -22,6 +22,12 @@ qbee/api.h
 gnuradio/hier_block2.h
 -
 
+../include/qbee/qbee_framer.h
+qbee/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/qbee/qbee_nrzi_decoder.h
 qbee/api.h
 -
@@ -70,6 +76,30 @@ gnuradio/analog/quadrature_demod_cf.h
 qbee/qbee_demodulator_fsk.h
 -
 
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.cc
+config.h
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/config.h
+gnuradio/io_signature.h
+-
+qbee_framer_impl.h
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.h
+gnuradio/tags.h
+-
+iostream
+-
+string.h
+-
+stdio.h
+-
+rs_encode.h
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.h
+
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_framer_impl.h
+qbee/qbee_framer.h
+-
+pmt/pmt.h
+-
+
 /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/qbee_nrzi_decoder_impl.cc
 config.h
 /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/config.h
@@ -113,6 +143,14 @@ rs_decode.h
 /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_decode.h
 
 /home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_decode.h
+
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.cc
+string.h
+-
+rs_encode.h
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.h
+
+/home/mbkitine/Dropbox/Lulea/GRC/qbee/gr-qbee/lib/rs_encode.h
 
 /usr/local/include/gnuradio/analog/api.h
 gnuradio/attributes.h

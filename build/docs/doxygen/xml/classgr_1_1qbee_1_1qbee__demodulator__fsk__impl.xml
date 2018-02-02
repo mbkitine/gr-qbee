@@ -45,36 +45,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7">
+      <node id="18">
         <label>gr::hier_block2</label>
       </node>
-      <node id="6">
+      <node id="17">
         <label>gr::qbee::qbee_demodulator_fsk</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk"/>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="16">
         <label>gr::qbee::qbee_demodulator_fsk_impl</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10">
+      <node id="21">
         <label>gr::hier_block2</label>
       </node>
-      <node id="9">
+      <node id="20">
         <label>gr::qbee::qbee_demodulator_fsk</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="21" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="19">
         <label>gr::qbee::qbee_demodulator_fsk_impl</label>
         <link refid="classgr_1_1qbee_1_1qbee__demodulator__fsk__impl"/>
-        <childnode refid="9" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
