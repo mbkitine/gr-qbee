@@ -131,7 +131,7 @@ namespace gr {
        */
 
       //Remove the first five bytes
-      //pkt.erase(pkt.begin(), pkt.begin() + 5);
+      pkt.erase(pkt.begin(), pkt.begin() + 5);
 
       //Reed solomon data and parity strings
       unsigned char *data;
@@ -144,7 +144,7 @@ namespace gr {
 
       //Reed-Solomon coding
       encode_rs_8(data,parity,255 - (pkt.size() - 16) - 32);
-      std::cout << "parity data" << std::endl;
+      //std::cout << "parity data" << std::endl;
 
       
       //Appending parity bits

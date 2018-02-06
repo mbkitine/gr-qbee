@@ -2,6 +2,7 @@
 /* 
  * Copyright 2017 Moses Browne Mwakyanjala.
  * E-mail: moses.browne.mwakyanjala@ltu.se
+ * File modified from default HDLC deframer class
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3, or (at your option)
@@ -82,9 +83,9 @@ namespace gr {
 			    unsigned char *rs_pkt, int rs_pkt_len,int errors,int &total_frame_length)
     {
       /*ICD packet
-	-------------------------------------------------------------------------------
+	---------------------------------------------------------------
 	| SYNC WORD (4) | lENGTH (1) | ERRORS_CORRECTED (1) | DATA(X) |
-	-------------------------------------------------------------------------------
+	---------------------------------------------------------------
       */
       int index = 0;
       //Inserting SYNC WORD (4 Bytes)
@@ -172,13 +173,13 @@ namespace gr {
 	      
 	      //Reed-Solomon decoding
 	      rs_res = decode_rs_8(&d_rsbuf[0], NULL, 0, 255 - rs_len + 1);
-	      printf("\n Erros = %d\n",rs_res);
+	      printf("\n RS Errors = %d\n",rs_res);
 	      
 	      if (rs_res >= 0)
 		{
 		  printf("\n Reed solomon errors corrected = %d\n",rs_res);
 		  //ICD wrapper
-		  icd_wrapper(d_icdbuf,d_ax25headerbuf,d_rsbuf,rs_len,rs_res - 32,d_icdbuf_len);//,rs_len - 32
+		  icd_wrapper(d_icdbuf,d_ax25headerbuf,d_rsbuf,rs_len-32,rs_res,d_icdbuf_len);//,rs_len - 32
 		  pmt::pmt_t pdu(pmt::cons(pmt::PMT_NIL,
 					   pmt::make_blob(d_icdbuf, d_icdbuf_len)));
 		  message_port_pub(pmt::mp("out"), pdu);
